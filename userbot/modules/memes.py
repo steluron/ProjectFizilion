@@ -1453,7 +1453,12 @@ async def lool(lul):
             "`\n┈┃╰▏┃╱╭╮┃╱╱▏╱╱▆┃┈\n┈╰━▏┗━╰╯┗━╱╱╱╰┻┫┈\n┈┈┈▏┏┳━━━━▏┏┳━━╯┈`"
             "`\n┈┈┈▏┃┃┈┈┈┈▏┃┃┈┈┈┈ `"
         )
-        
+     
+    
+    @register(outgoing=True, pattern="^.y$")
+async def y(yi):
+    if not yi.text[0].isalpha() and yi.text[0] not in ("/", "#", "@", "!"):
+        await yi.edit("yiğit")
         
 @register(outgoing=True, pattern="^.snake$")
 async def snake(snuk):
