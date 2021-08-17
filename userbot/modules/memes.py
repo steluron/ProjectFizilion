@@ -1081,10 +1081,10 @@ async def oof(woof):
 
 
 @register(outgoing=True, pattern="^yeee$")
-async def yeee(plus):
+async def yeee(yeah):
     t = "yeee"
     for j in range(25):
-        t = t[:-1] + "++"
+        t = t[:-1] + "ee"
         await plus.edit(t)
 
 
