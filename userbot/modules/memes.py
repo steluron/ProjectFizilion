@@ -1445,6 +1445,21 @@ async def gun(gan):
                 "\n░▐██████▌░░░░░░░░░░"
         )
 
+@register(outgoing=True, pattern="^.troll$")
+async def troll(troll):
+    if not troll.text[0].isalpha() and troll.text[0] not in ("/", "#", "@", "!"):
+        await troll.edit(
+                      "⠛⢻⣿⣯⣿⣿⣿⣶ ⣶⣶⣶⣤⣤⣤⣀\n"
+                      "      ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷\n"
+                      "           ⠻⣿⡛⠉⠭⠉⠉⢉⣿⣿⣧\n"
+                      "  ⠈⠙⠲⣶⠖⠄⠄⢿⣿⠄⠶⣶⣾⣿⣿⣿⣿⣧\n"                       
+                      "           ⠺⢿⡗⠄⣹⣿⣿⠿⣟⣿⡏\n"    
+                      "             ⠤⠤⢾⣿⣿⣿⣦⠘⡿\n"
+                      "        ⠈⢻⡿⣷⣶⣶⣤⣤⣤⣶⣦⠁\n"
+                      "       ⠄⣽⣿⣿⣿⣿⣿⣿⣿⣿⡟⠘\n"
+                      "         ⠿⣿⣿⣿⣿⣿⣿⣿⠃\n"
+                      "            ⠉⠉⠛⠋⠉⠁\n"
+                     )
             
 @register(outgoing=True, pattern="^.lool$")
 async def lool(lul):
