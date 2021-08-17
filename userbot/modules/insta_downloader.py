@@ -11,7 +11,7 @@ from telethon.errors.rpcerrorlist import YouBlockedUserError
 from userbot import CMD_HELP, bot
 from userbot.events import register
 
-@register(outgoing=True, pattern=r"^\.insta(?: |$)(.*)")
+@register(outgoing=True, pattern=r"^\.dv(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -20,16 +20,16 @@ async def _(event):
 
     if msg_link:
         query = msg_link.text
-        await event.edit("`Fetching Data from instagram`")
+        await event.edit("`Fetching Data from platform`")
     elif ".com" not in query:
         await event.edit("`Enter a valid link to download from`")
 
     elif "reel" in query:
-        await event.edit("`Reel is downloading......`")
+        await event.edit("`Video is downloading......`")
     elif "stories" in query:
         await event.edit("`Sorry but story downloading is not supported yet`")
     else:
-        await event.edit("`fetching post from instagram...`")
+        await event.edit("`fetching post from platform...`")
     chat = "@allsaverbot"
     try:
         async with bot.conversation(chat) as conv:
@@ -54,8 +54,8 @@ async def _(event):
         return await event.edit("`Error: `@allsaverbot` is not responding or you are trying to downloading instagram stories")
 CMD_HELP.update(
     {
-        "insta": ".insta <instagram link>"
-                "\nUsage: Reply to a instagram link or paste instagram link to "
+        "dv": ".dv <link>"
+                "\nUsage: Reply to a video link or paste other platform link to "
                 "download the file using `@allsaverbot`"
     }
 )
