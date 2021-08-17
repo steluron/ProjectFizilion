@@ -234,7 +234,7 @@ async def amireallyalive(alive):
     uptime = await get_readable_time((time.time() - StartTime))
     output = (
         f"`===============================`\n"
-        f"**FIZILION IS UP [Selffuck Edition]**\n"
+        f"**FIZILION IS UP [Premium Edition]**\n"
         f"`=============================== `\n"
         f"**[MISC Info]:**\n"
         f"•`User           : {DEFAULTUSER} `\n"
