@@ -1456,9 +1456,9 @@ async def lool(lul):
      
     
     @register(outgoing=True, pattern="^.troll$")
-async def troll(trul):
-    if not trul.text[0].isalpha() and trul.text[0] not in ("/", "#", "@", "!"):
-        await trul.edit("░░░░░▄▄▄▄▀▀▀▀▀▀▀▀▄▄"
+async def troll(troll):
+    if not troll.text[0].isalpha() and troll.text[0] not in ("/", "#", "@", "!"):
+        await troll.edit("░░░░░▄▄▄▄▀▀▀▀▀▀▀▀▄▄"
                         "░░░░░█░░░░▒▒▒▒▒▒▒▒▒▒▒▒░░▀▀▄░░░░"
                         "░░░░█░░░▒▒▒▒▒▒░░░░░░░░▒▒▒░░█░░░"
                         "░░░█░░░░░░▄██▀▄▄░░░░░▄▄▄░░░░█░░"
