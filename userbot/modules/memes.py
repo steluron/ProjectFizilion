@@ -177,20 +177,6 @@ EMOJIS = [
     "🚰",
 ]
 
-TURKISHCOMICS = [
-    "kudur",
-    "31",
-    "ağla",
-    "ağlamıcan",
-    "cus",
-    "napim",
-    "bruh",
-    "sanne",
-    "ü",
-    "ğ",
-    "tten",
-    "domal",
-]
 
 INSULT_STRINGS = [
     "Owww ... Such a stupid idiot.",
@@ -1063,12 +1049,6 @@ async def metoo(hahayes):
     """ Haha yes """
     await hahayes.edit(choice(METOOSTR))
 
-    
-@register(outgoing=True, pattern="^.tc$")
-async def tc(hahayes):
-    """ Haha yes """
-    await hahayes.edit(choice(TURKISHCOMICS))
-    
 
 @register(outgoing=True, pattern="^.iff$")
 async def pressf(f):
