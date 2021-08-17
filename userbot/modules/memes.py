@@ -1217,6 +1217,17 @@ async def clock(event):
             deq.rotate(1)
     except BaseException:
         return
+    
+    @register(outgoing=True, pattern="^.tong$")
+async def tong(event):
+    deq = deque(list("😋😛😝😜🤪"))
+    try:
+        for x in range(32):
+            await sleep(0.1)
+            await event.edit("".join(deq))
+            deq.rotate(1)
+    except BaseException:
+        return
 
 @register(outgoing=True, pattern="^.operations$")
 async def operations(event):
