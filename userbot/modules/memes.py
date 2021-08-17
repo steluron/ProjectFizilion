@@ -1103,6 +1103,12 @@ async def Brr(burr):
         t = t[:-1] + "rr"
         await burr.edit(t)
 
+@register(outgoing=True, pattern="^Prr$")
+async def Prr(burr):
+    t = "Prr"
+    for j in range(20):
+        t = t[:-1] + "rr"
+        await burr.edit(t)
 
 @register(outgoing=True, pattern="^hmm$")
 async def hmm(hmmm):
