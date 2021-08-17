@@ -89,8 +89,8 @@ ZALG_LIST = [
         " ̈",
         " ̊",
         " ͂",
-        " ̓",
-        " ̈́",
+        " ̓",
+        " ̈́",
         " ͊",
         " ͋",
         " ͌",
@@ -124,8 +124,8 @@ ZALG_LIST = [
     [
         " ̕",
         " ̛",
-        " ̀",
-        " ́",
+        " ̀",
+        " ́",
         " ͘",
         " ̡",
         " ̢",
@@ -936,7 +936,7 @@ async def zal(zgfy):
         message = textx.text
     else:
         await zgfy.edit(
-            "`gͫ ̆ i̛ ̺ v͇̆ ȅͅ   a̢ͦ   s̴̪ c̸̢ ä̸ rͩͣ y͖͞   t̨͚ é̠ x̢͖  t͔͛`"
+            "`gͫ ̆ i̛ ̺ v͇̆ ȅͅ   a̢ͦ   s̴̪ c̸̢ ä̸ rͩͣ y͖͞   t̨͚ é̠ x̢͖  t͔͛`"
         )
         return
 
@@ -1099,6 +1099,14 @@ async def Pro(proo):
 @register(outgoing=True, pattern="^Brr$")
 async def Brr(burr):
     t = "Brr"
+    for j in range(20):
+        t = t[:-1] + "rr"
+        await burr.edit(t)
+
+
+@register(outgoing=True, pattern="^Prr$")
+async def Prr(burr):
+    t = "Prr"
     for j in range(20):
         t = t[:-1] + "rr"
         await burr.edit(t)
