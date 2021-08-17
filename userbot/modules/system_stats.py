@@ -236,7 +236,6 @@ async def amireallyalive(alive):
         f"`===============================`\n"
         f"**FIZILION IS UP AND RUNNING...**\n"
         f"`=============================== `\n"
-        f"**[MISC Info]:**\n"
         f"•`User           : {DEFAULTUSER} `\n"
         f"•`Running on     : {repo.active_branch.name} `\n"
         f"•`Loaded modules : {len(modules)} `\n"
